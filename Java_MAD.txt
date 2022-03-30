@@ -1,0 +1,122 @@
+Q-1 : Write a java program which return the sum of digits.
+public class Question_1 {
+    public static void main(String[] args) {
+
+        int n = 25;
+        int rem = n%10;
+        n/=10;
+
+        int ans = rem + n;
+
+        System.out.println(ans);
+
+    }
+}
+
+/*------------------------------------------------------------------------------------------------------ */
+
+Q-2 : Write a java program which return the difference of digits.
+
+public class Question_2 {
+    public static void main(String[] args) {
+      
+        int n = 25;
+        int rem = n%10;
+        n/=10;
+
+        int ans = rem - n;
+
+        System.out.println(ans);
+
+    }
+}
+
+/*------------------------------------------------------------------------------------------------------ */
+
+Q-3 : Write a java program to find next multiple of 100 of a given number.
+
+public class Question_3 {
+    public static void main(String[] args) {
+
+        int n = 25;
+        int ans = (n / 100 + 1) * 100;
+        System.out.println(ans);
+
+    }
+}
+
+/*------------------------------------------------------------------------------------------------------ */
+
+Q-4 : Write a java program to check greatest number among the 2 numbers.
+
+public class Question_4 {
+    public static void main(String[] args) {
+     
+       int n = 55;
+        int m = 55;
+        if(n > m) {
+            System.out.println(n);
+        } else {
+            System.out.println(m);
+        }
+    }
+}
+
+
+/*------------------------------------------------------------------------------------------------------ */
+
+Q-5 : Write a java program to check the greatest number amongst theree numbers.
+
+public class Question_5 {
+    public static void main(String[] args) {
+      
+	  int n = 50;
+        int m = 505;
+        int s = 100;
+        int ans = Math.max(n,Math.max(m,s));
+
+        System.out.println(ans);
+      
+    }
+}
+
+/*------------------------------------------------------------------------------------------------------ */
+
+Q-6 : Write a java program to find whether a given number is even or odd.
+
+public class Question_6 {
+    public static void main(String[] args) {
+      
+      int n= 50;
+      if((n & 1) == 1) {
+          System.out.println("Odd");
+      } else {
+          System.out.println("even");
+      } 
+    }
+}
+
+/*------------------------------------------------------------------------------------------------------ */
+
+Q-7 Write a java program to find whether the given number is prime number or not.
+
+public class Question_7 {
+    public static void main(String[] args) {
+
+        int n = 17;
+        System.out.println(isPrime(n));
+    }
+    static boolean isPrime(int n) {
+        if(n<=1) {
+            return false;
+        }
+        int c = 2;
+        while(c*c <= n) {
+            if(n % c == 0) {
+                return false;
+            }
+            c++;
+        }
+        return true;
+    }
+}
